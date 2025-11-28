@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aventura Gráfica - Escandalosos </title>
+    <link rel="stylesheet" href="https://unpkg.com/papercss@1.8.3/dist/paper.min.css">
+    <style>
+        body {
+            padding-top: 180px; 
+        }
+        .contenido-container {
+            max-width: 1000px;
+            margin: 32px auto;
+            padding: 32px;
+            border: 1px solid #ddd;
+        }
+        .card {
+            margin-bottom: 32px;
+            padding: 32px
+        } 
+        .imagen-aventura {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto 32px auto;
+        }
+         nav.border {
+        padding: 10px 0 !important; 
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }  
+    .nav-list {
+        display: flex !important;  
+        flex-direction: row;       
+        margin: 0;                 
+        padding: 0;
+    }
+    .nav-list li {
+        list-style: none;          
+        margin: 0 5px;             
+    }
+
+    .nav-list li a.paper-btn {
+        padding: 0.4rem 1rem;      
+        font-size: 1rem;           
+    }
+    body {
+        padding-top: 100px;
+    }
+    iframe {       
+    aspect-ratio: 4 / 3;       
+    display: block;        
+    margin: 0 auto;  
+    border: none;      
+}
+    </style>
+</head>
+<body>
+    <nav class="border fixed split-nav"> 
+        <div class="nav-brand">
+        </div>
+<div class="nav-list-container"> 
+    <ul class="nav-list">
+        <li><a href="#inicio" class="paper-btn">Inicio</a></li>
+        <li><a href="#tematica" class="paper-btn">Temática y Producción</a></li>
+        <li><a href="#equipo" class="paper-btn">Integrantes</a></li>
+    </ul>
+</div>
+    </nav>
+
+    <main class="contenido-container">
+
+        <section id="inicio" class="row">
+            <div class="col-12">
+                <h1 class="text-center">¡Bienvenido a nuestra</h1>
+                <h1 class="text-center">Aventura Gráfica!</h1>
+                <p class="text-center">Explora los distintos caminos junto a los osos.</p>
+                <p class="text-center">Click para empezar :D</p>
+            <div class="col-12">
+           <!-- <button class="btn btn-block btn-warning">JUGAR</button> -->
+            </div>
+            </div>
+                        <iframe src="p5/tpfinalpt1/index.html" frameborder="0" width="650" height="490"></iframe>
+
+        </section>
+
+        <hr class="margin-extra-large">
+
+        <section id="tematica" class="row">
+            <div class="col-12">
+            </div>
+            <!-- tematica -->
+            <div class="col-6 col-sm-12">
+                <h3>La temática: Escandalosos</h3>
+                <p>Nuestra aventura gráfica se centra en la serie animada "We Bare Bears" en inglés o "Escandalosos" en español. El objetivo es ayudar a Pardo, Panda y Polar a encontrar el lugar perfecto para un picnic. La dinámica de la aventura se basa en tomar decisiones, el jugador tiene que elegir entre los caminos sugeridos, determinando cómo avanza la historia. Esto nos ayudó a diseñar una mecánica que cumple con tener distintos finales dependiendo de la elección que haga el jugador. Además, intentamos que la estética de la interfaz y los escenarios sean del mismo estilo visual simple y amigable que tiene la serie.</p>
+                 <img src="img/imagen1.png" alt="Imagen de Escandalosos" class="imagen-aventura">
+
+            </div>
+            <!-- produccion -->
+            <div class="col-6 col-sm-12">
+                <h3>Proceso de producción</h3>
+                <ul class="list-group">
+                    <li class="list-group-item"><strong>Mapa:</strong> Armamos un mapa con los distintos caminos/recorridos que puede hacer el jugador.</li>
+                    <li class="list-group-item"><strong>Imágenes:</strong> Buscamos imágenes que sean parecidas a los escenarios que planteamos en el mapa.</li>
+                    <li class="list-group-item"><strong>Programar en p5.js:</strong> Empezamos a programar la lógica interactiva, el manejo de estados, los botones, el sonido dependiendo el final.</li>
+                    <li class="list-group-item"><strong>Prueba:</strong> Verificamos que todos los botones sean clickeables, que lleguen a la pantalla correcta y que el sonido funcione bien.</li>
+                </ul>
+            </div>
+        </section>
+        <hr class="margin-extra-large">
+<!-- integrantes amaaaar-->
+        <section id="equipo" class="row">
+            <div class="col-12">
+                <h2>El equipo</h2>
+            </div>
+            <!-- probe hacerlo c tarjetas a ver q onda --> 
+            <div class="col-4 col-sm-12 margin-right-large">
+                <div class="card">
+                    <h4 class="card-title">Zoe Harima</h4>
+                    <p class="card-text">
+                        Programó la estructura base del juego, poniendo las condiciones de la lógica (cómo cambiamos de pantalla), programando los botones y el funcionamiento del sonido dependiendo si es final bueno o malo.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-4 col-sm-12">
+                <div class="card">
+                    <h4 class="card-title">Delfina Cebey</h4>
+                    <p class="card-text">
+                        Se encargó de la parte visual. Buscar las imágenes de cada escena, elegir la fuente más parecida a la de la serie y programar en cada pantalla los elementos visuales que debían aparecer.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer class="text-center padding">
+        <p class="text-small">
+            Trabajo Práctico Final - Sitio web de la Aventura Gráfica Interactiva - Comisión 2 - PMIW
+        </p>
+    </footer>
+
+</body>
+</html>
